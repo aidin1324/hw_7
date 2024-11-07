@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="/static/task2.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Калькулятор</h2>
+        <div>
+            <label for="number1">Число 1:</label>
+            <input type="text" id="number1" name="number1">
+            <span class="error" id="number1Error"></span>
+        </div>
+        <div>
+            <label for="number2">Число 2:</label>
+            <input type="text" id="number2" name="number2">
+            <span class="error" id="number2Error"></span>
+        </div>
+        <div>
+            <label for="operation">Операция:</label>
+            <select id="operation" name="operation">
+                <option value="add">Сложение</option>
+                <option value="subtract">Вычитание</option>
+                <option value="multiply">Умножение</option>
+                <option value="divide">Деление</option>
+            </select>
+        </div>
+        <button id="calculateBtn">Посчитать</button>
+        <div id="result"></div>
+    </div>
+    <script src="/static/task2.js"></script>
+</body>
+</html>
